@@ -8,7 +8,7 @@ website:
       - href: index.qmd
         text: Home
       - href: dashboard.qmd
-        text: Home
+        text: Ranking2024
       - about.qmd
 
 format:
