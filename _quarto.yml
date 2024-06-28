@@ -7,6 +7,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: lista.qmd
+        text: Lista
       - href: wykres.qmd
         text: Wykres
       - href: dashboard.qmd

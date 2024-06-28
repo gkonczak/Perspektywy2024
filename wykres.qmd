@@ -1,8 +1,10 @@
 ---
-title: "Wykres"
+title: "Ranking"
 editor: visual
+format: 
+  dashboard:
+    orientation: columns
 ---
-
 
 
 ```{r}
@@ -10,27 +12,32 @@ editor: visual
 #| include: false
 library(readxl)
 library(tidyverse)
-
 ```
 
 ```{r}
 #| echo: false
+#| include: false
 dane=read_excel("p_2024.xlsx",sheet="p_2024")
+dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
+
 d1=dane %>% 
   filter(ind=="UE")
-dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
+
+dane2=dane[c(1:36,46,48,70),]
+nazwy=names(d1)
 ```
 
 
 ```{r}
-#| echo: false
-# #| fig-height: 52
-# #| fig-width: 36
-dane2=dane[c(1:36,46,48,70),]
-dane2 %>%
-    ggplot(aes(Uczelnia,Ranking_2024,fill=kolor))+
+#| title: Wykres
+#| fig-height: 10
+# #| fig-width: 18
+
+ggplot(dane2, aes(x = Uczelnia, y = Ranking_2024, fill = kolor)) +
   geom_bar(stat = "identity") +
-  labs(y="Punkty")+
+  labs(x="",y="Ranking_2024")+
   scale_fill_identity()+
   coord_flip()
+
 ```
+
