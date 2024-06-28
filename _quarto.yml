@@ -9,6 +9,8 @@ website:
         text: Home
       - href: dashboard.qmd
         text: Ranking2024
+      - href: dashboard.qmd
+        text: Ranking_2024
       - about.qmd
 
 format:
