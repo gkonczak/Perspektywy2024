@@ -6,20 +6,25 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Wprowadzenie
       - href: lista.qmd
         text: Lista
       - href: wykres.qmd
         text: Wykres
       - href: dashboard.qmd
-        text: Ranking2024
-      - about.qmd
+        text: Ranking
+      - href: ue.qmd
+        text: Ekonomiczne
+      - href: podsumowanie.qmd
+        text: Podsumowanie
+      - href: about.qmd
+        text: O...
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
 
 
 

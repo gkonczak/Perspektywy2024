@@ -4,7 +4,7 @@ format:
     orientation: columns
 ---
 
-### Row {.tabset title="Kategoria (Uczelnie 1:25 plus ekonomiczne)"}
+### Row {.tabset title="Kategoria (Uczelnie ekonomiczne)"}
 
 ```{r}
 #| echo: false
@@ -23,7 +23,7 @@ dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking
 d1=dane %>% 
   filter(ind=="UE")
 
-dane2=dane[c(1:25,35,46,48,70),]
+dane2=d1
 nazwy=names(d1)
 ```
 
@@ -153,7 +153,7 @@ p1+p2+p3
 nazwa=nazwy[21]
 p1=ggplot(dane2, aes(x = Uczelnia, y = v12, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -161,7 +161,7 @@ p1=ggplot(dane2, aes(x = Uczelnia, y = v12, fill = kolor)) +
 nazwa=nazwy[22]
 p2=ggplot(dane2, aes(x = Uczelnia, y = v13, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -169,7 +169,7 @@ p2=ggplot(dane2, aes(x = Uczelnia, y = v13, fill = kolor)) +
 nazwa=nazwy[23]
 p3=ggplot(dane2, aes(x = Uczelnia, y = v14, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -177,7 +177,7 @@ p3=ggplot(dane2, aes(x = Uczelnia, y = v14, fill = kolor)) +
 nazwa=nazwy[24]
 p4=ggplot(dane2, aes(x = Uczelnia, y = v15, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -185,7 +185,7 @@ p4=ggplot(dane2, aes(x = Uczelnia, y = v15, fill = kolor)) +
 nazwa=nazwy[25]
 p5=ggplot(dane2, aes(x = Uczelnia, y = v16, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -193,7 +193,7 @@ p5=ggplot(dane2, aes(x = Uczelnia, y = v16, fill = kolor)) +
 nazwa=nazwy[26]
 p6=ggplot(dane2, aes(x = Uczelnia, y = v17, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -201,7 +201,7 @@ p6=ggplot(dane2, aes(x = Uczelnia, y = v17, fill = kolor)) +
 nazwa=nazwy[27]
 p7=ggplot(dane2, aes(x = Uczelnia, y = v18, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -209,7 +209,7 @@ p7=ggplot(dane2, aes(x = Uczelnia, y = v18, fill = kolor)) +
 nazwa=nazwy[28]
 p8=ggplot(dane2, aes(x = Uczelnia, y = v19, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -217,7 +217,7 @@ p8=ggplot(dane2, aes(x = Uczelnia, y = v19, fill = kolor)) +
 nazwa=nazwy[29]
 p9=ggplot(dane2, aes(x = Uczelnia, y = v20, fill = kolor)) +
   geom_bar(stat = "identity") +
-      theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -253,7 +253,7 @@ p1+p2
 nazwa=nazwy[32]
 p1=ggplot(dane2, aes(x = Uczelnia, y = v23, fill = kolor)) +
   geom_bar(stat = "identity") +
-    theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -261,7 +261,7 @@ p1=ggplot(dane2, aes(x = Uczelnia, y = v23, fill = kolor)) +
 nazwa=nazwy[33]
 p2=ggplot(dane2, aes(x = Uczelnia, y = v24, fill = kolor)) +
   geom_bar(stat = "identity") +
-    theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -269,7 +269,7 @@ p2=ggplot(dane2, aes(x = Uczelnia, y = v24, fill = kolor)) +
 nazwa=nazwy[34]
 p3=ggplot(dane2, aes(x = Uczelnia, y = v25, fill = kolor)) +
   geom_bar(stat = "identity") +
-    theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -277,7 +277,7 @@ p3=ggplot(dane2, aes(x = Uczelnia, y = v25, fill = kolor)) +
 nazwa=nazwy[35]
 p4=ggplot(dane2, aes(x = Uczelnia, y = v26, fill = kolor)) +
   geom_bar(stat = "identity") +
-    theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -285,7 +285,7 @@ p4=ggplot(dane2, aes(x = Uczelnia, y = v26, fill = kolor)) +
 nazwa=nazwy[36]
 p5=ggplot(dane2, aes(x = Uczelnia, y = v27, fill = kolor)) +
   geom_bar(stat = "identity") +
-    theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -293,7 +293,7 @@ p5=ggplot(dane2, aes(x = Uczelnia, y = v27, fill = kolor)) +
 nazwa=nazwy[37]
 p6=ggplot(dane2, aes(x = Uczelnia, y = v28, fill = kolor)) +
   geom_bar(stat = "identity") +
-    theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -301,7 +301,7 @@ p6=ggplot(dane2, aes(x = Uczelnia, y = v28, fill = kolor)) +
 nazwa=nazwy[38]
 p7=ggplot(dane2, aes(x = Uczelnia, y = v29, fill = kolor)) +
   geom_bar(stat = "identity") +
-  theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -309,7 +309,7 @@ p7=ggplot(dane2, aes(x = Uczelnia, y = v29, fill = kolor)) +
 nazwa=nazwy[39]
 p8=ggplot(dane2, aes(x = Uczelnia, y = v30, fill = kolor)) +
   geom_bar(stat = "identity") +
-  theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
@@ -317,7 +317,7 @@ p8=ggplot(dane2, aes(x = Uczelnia, y = v30, fill = kolor)) +
 nazwa=nazwy[40]
 p9=ggplot(dane2, aes(x = Uczelnia, y = v31, fill = kolor)) +
   geom_bar(stat = "identity") +
-  theme(axis.text.y = element_text(size = 4))+
+  theme(axis.text.y = element_text(size = 4),axis.text.x = element_text(size = 5), axis.title.x = element_text(size = 6))+
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()

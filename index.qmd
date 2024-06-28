@@ -2,9 +2,23 @@
 title: "Perspektywy2024"
 ---
 
-This is a Quarto website.
+Najnowszy ranking uczelni akademickich zob. [Ranking](https://2024.ranking.perspektywy.pl/)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Kategorie:
+
+-   Prestiż - 12%
+
+-   Absolwenci na rynku pracy - 12%
+
+-   Potencjał naukowy - 13%
+
+-   Efektywność naukowa – 30%
+
+-   Innowacyjność - 8%
+
+-   Warunki kształcenia - 10%
+
+-   Umiędzynarodowienie - 15%
 
 ```{r}
 1 + 7
