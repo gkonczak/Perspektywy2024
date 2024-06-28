@@ -5,5 +5,7 @@ title: "O..."
 Ranking Perpektywy 2024
 
 ```{r}
+
+# Obliczenia
 1 + 1
 ```
