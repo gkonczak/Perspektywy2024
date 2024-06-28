@@ -15,21 +15,19 @@ format:
 #| include: false
 library(readxl)
 library(tidyverse)
-
 ```
 
+
+
 ```{r}
+#| echo: false
+#| include: false
 dane=read_excel("p_2024.xlsx",sheet="p_2024")
-```
-
-
-
-
-```{r}
+dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
 
 d1=dane %>% 
   filter(ind=="UE")
-dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
+
 ```
 
 
