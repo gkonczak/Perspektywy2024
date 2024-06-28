@@ -1,0 +1,72 @@
+---
+title: "Ranking"
+editor: visual
+format: 
+  dashboard:
+    orientation: columns
+---
+
+# Start
+
+## Column {40%}
+
+
+```{r}
+#| echo: false
+#| include: false
+library(readxl)
+library(tidyverse)
+
+```
+
+```{r}
+dane=read_excel("p_2024.xlsx",sheet="p_2024")
+```
+
+
+
+
+```{r}
+
+d1=dane %>% 
+  filter(ind=="UE")
+dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
+```
+
+
+
+
+
+```{r}
+# head(dane[1:25,c(2,8)],25)
+
+df <- as.data.frame(dane)
+head(df[,c(2,9)],70)
+```
+
+
+
+## Column {60%}
+
+Kategorie
+
+### Row {10%}
+
+
+```{r}
+# head(dane[1:25,c(2,8)],25)
+
+df <- as.data.frame(dane)
+head(df[,c(2,10,11)],20)
+```
+
+
+### Row {70%}
+
+Tekst
+
+### Row {20%}
+
+Tekst
+
+# About
