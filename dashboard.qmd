@@ -4,8 +4,12 @@ format:
   dashboard:
     orientation: columns
 ---
-### Row {.tabset title="Kategoria 1"}
 
+### Row
+
+Tekst
+
+### Row {.tabset title="Kategoria"}
 
 ```{r}
 #| echo: false
@@ -26,8 +30,6 @@ d1=dane %>%
 dane2=dane[c(1:25,35,46,48,70),]
 nazwy=names(d1)
 ```
-
-
 
 
 
@@ -279,6 +281,4 @@ ggplot(dane2, aes(x = Uczelnia, y = v31, fill = kolor)) +
   labs(x="",y=nazwa)+
   scale_fill_identity()+
   coord_flip()
-
-
 ```
