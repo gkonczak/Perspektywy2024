@@ -1,8 +1,7 @@
 ---
 title: "Ranking"
-editor: visual
 format: 
-  dashboard:
+  dashboard:    
     orientation: columns
 ---
 ### Row {.tabset title="Kategoria 1"}
