@@ -1,6 +1,8 @@
 ---
 title: "Ranking"
-format: dashboard
+format: 
+  dashboard:
+    orientation: columns
 ---
 ### Row {.tabset title="Kategoria 1"}
 
