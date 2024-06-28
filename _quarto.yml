@@ -7,10 +7,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: wykres.qmd
+        text: Wykres
       - href: dashboard.qmd
         text: Ranking2024
-      - href: dashboard.qmd
-        text: Ranking_2024
       - about.qmd
 
 format:

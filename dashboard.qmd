@@ -6,7 +6,6 @@ format:
     orientation: columns
 ---
 
-# Start
 
 ## Column {40%}
 
@@ -69,4 +68,4 @@ Tekst
 
 Tekst
 
-# About
+
