@@ -15,10 +15,21 @@ dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking
 
 ```{r}
 #| echo: false
+library(DT)
 df <- as.data.frame(dane)
-library(gt)
-gt(df[,c(3,41:71)]) %>%
-tab_options(container.width = pct(100))
+datatable(df[,c(2,9,41:71)], options = list(scrollX = TRUE, width = "100%"))
+```
+
+
+
+
+```{r}
+#| echo: false
+
+# df <- as.data.frame(dane)
+# library(gt)
+# gt(df[,c(3,41:71)]) %>%
+# tab_options(container.width = pct(100))
 ```
 
 
