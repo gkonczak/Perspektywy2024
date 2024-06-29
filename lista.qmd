@@ -5,9 +5,8 @@ format:
     orientation: columns
 ---
 
-## Rows
 
-### Column {10%}
+
 
 ```{r}
 #| echo: false
@@ -26,7 +25,7 @@ dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking
 ```
 
 
-### Column {90%}
+
 
 ```{r}
 #| echo: false
