@@ -10,7 +10,23 @@ library(tidyverse)
 library(kableExtra)
 dane=read_excel("p_2024.xlsx",sheet="p_2024")
 dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
+```
+
+
+```{r}
+#| echo: false
 df <- as.data.frame(dane)
-kable(df[,c(1,3,9,41:71)],format = "html", table.attr = "style='width: 100%;'")
+library(gt)
+gt(df[,c(3,41:71)]) %>%
+tab_options(container.width = pct(100))
+```
+
+
+
+
+```{r}
+# df <- as.data.frame(dane)
+# 
+# kable(df[,c(1,3,9,41:71)],format = "html", digits=2,table.attr = "style='width: 100%;'")
 ```
 
