@@ -4,8 +4,11 @@ title: "O..."
 
 Ranking Perpektywy 2024
 
-```{r}
 
-# Obliczenia
-1 + 1
-```
+[Ranking](https://2024.ranking.perspektywy.pl/)
+
+[PDF](https://i.perspektywy.net/pages/tqrumzzuxl/tables/uczelnie-akademickie-2024.pdf)
+
+[Metodologia](https://2024.ranking.perspektywy.pl/methodology/rsw)
+
+

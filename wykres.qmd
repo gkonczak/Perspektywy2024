@@ -1,7 +1,7 @@
 ---
 format: 
   dashboard:
-    orientation: columns
+    orientation: rows
 ---
 
 
@@ -28,13 +28,13 @@ nazwy=names(d1)
 
 ```{r}
 #| title: Wykres
-#| fig-height: 30
-#| fig-width: 30
+# #| fig-height: 30
+#| fig-width: 20
 
 ggplot(dane2, aes(x = Uczelnia, y = Ranking_2024, fill = kolor)) +
   geom_bar(stat = "identity") +
-  labs(x="",y="Ranking_2024")+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1,size=30),axis.text.y = element_text(size = 20))+
+  labs(x="",y="Ranking_2024", title="Miejsca 1-36 plus 3 ekonomiczne")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1,size=4),axis.text.y = element_text(size = 4))+
     scale_fill_identity()
 
 ```
