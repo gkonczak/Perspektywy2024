@@ -19,6 +19,6 @@ dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking
 
 ```{r}
 df <- as.data.frame(dane)
-kable(df[,c(1,2,9,41:71)],format = "html", table.attr = "style='width:80%;'")
+kable(df[,c(1,3,9,41:71)],format = "html", table.attr = "style='width: 100%;'")
 ```
 
