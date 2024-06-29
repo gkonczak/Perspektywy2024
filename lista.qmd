@@ -1,5 +1,4 @@
 ---
-title: "Lista"
 format: dashboard
 ---
 
@@ -9,15 +8,8 @@ format: dashboard
 library(readxl)
 library(tidyverse)
 library(kableExtra)
-```
-
-```{r}
-#| echo: false
 dane=read_excel("p_2024.xlsx",sheet="p_2024")
 dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking_2024)])
-```
-
-```{r}
 df <- as.data.frame(dane)
 kable(df[,c(1,3,9,41:71)],format = "html", table.attr = "style='width: 100%;'")
 ```
