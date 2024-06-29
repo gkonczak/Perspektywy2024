@@ -17,7 +17,7 @@ dane$Uczelnia <- factor(dane$Uczelnia, levels = dane$Uczelnia[order(dane$Ranking
 #| echo: false
 library(DT)
 df <- as.data.frame(dane)
-datatable(df[,c(2,9,41:71)], options = list(scrollX = TRUE, width = "100%"))
+datatable(df[,c(3,9,41:71)], options = list(scrollX = TRUE, width = "100%"))
 ```
 
 
