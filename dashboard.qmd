@@ -40,6 +40,7 @@ p1=ggplot(dane2, aes(x = Uczelnia, y = v1, fill = kolor)) +
   coord_flip()
 
 
+
 nazwa=nazwy[11]
 p2=ggplot(dane2, aes(x = Uczelnia, y = v2, fill = kolor)) +
   geom_bar(stat = "identity") +
